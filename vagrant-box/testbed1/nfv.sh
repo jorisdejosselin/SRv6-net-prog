@@ -10,7 +10,7 @@ apt-get -y --force-yes install iperf3
 apt-get -y --force-yes install libpcap-dev
 
 # Install latest tcpdump that support SR
-git clone https://github.com/the-tcpdump-group/tcpdump
+git clone https://github.com/jorisdejosselin/SRv6-net-prog.git
 cd tcpdump/
 sudo ./configure
 sudo make && sudo make install && cd ..
