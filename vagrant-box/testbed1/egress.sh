@@ -21,6 +21,8 @@ sysctl -w net.ipv6.conf.all.forwarding=1
 # Configure interfaces
 ifconfig eth1 up
 ip -6 addr add 2:3::3/64 dev eth1
+# sudo /sbin/sysctl -w net.ipv6.conf.all.seg6_enabled=1
+# sudo /sbin/sysctl -w net.ipv6.conf.eth1.seg6_enabled=1
 
 # Configure routing
 ip -6 route add 2::/64 via 2:3::2
